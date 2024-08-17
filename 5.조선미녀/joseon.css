@@ -33,7 +33,7 @@ video {
 
 header {
   width: 100%;
-  height: 200px;
+  height: 120px;
   position: fixed;
   z-index: 990;
   padding: 0 5%;
@@ -108,12 +108,19 @@ header:hover {
 
 .section_2 {
   width: 100%;
+  height: 630px;
   position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .section_2 .box {
   width: 100%;
   position: absolute;
+  z-index: 1;
 }
 
 .section_2 .box_1 {
@@ -185,3 +192,505 @@ header:hover {
     opacity: 0;
   }
 }
+
+
+.section_3 {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.section_3 .text_box {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.section_3 .bold_text {
+  width: 100%;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.section_3 .gray_text {
+  width: 100%;
+  font-size: 20px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+.section_3 .contents_wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.section_3 .img_long_box {
+  width: 5030px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  animation: slide_1 25s ease-in-out infinite;
+}
+
+.section_3 .contents {
+  width: 430px;
+  position: relative;
+}
+
+.section_3 .img_box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section_3 .main_img {
+  transition: 0.25s ease-in-out;
+  width: 100%;
+}
+
+.section_3 .main_img:hover {
+  transform: scale(1.1);
+}
+
+.section_3 .like {
+  position: absolute;
+  width: 25px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.section_3 .text_wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  padding-top: 15px;
+}
+
+.section_3 .main_text a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section_3 .sub_text {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.section_3 .delete_text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.section_3 .new_price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.section_3 .discount {
+  font-size:12px;
+  background-color: black;
+  color: rgb(255, 187, 0);
+  font-weight: bold;
+  padding: 0 3px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.section_3 .price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@keyframes slide_1 {
+  0% {
+    transform: translateX(0);
+  }
+  13.3% {
+    transform: translateX(0);
+  }
+  14.3% {
+    transform: translateX(-460px);
+  }
+  27.6% {
+    transform: translateX(-460px);
+  }
+  28.6% {
+    transform: translateX(-920px);
+  }
+  41.9% {
+    transform: translateX(-920px);
+  }
+  42.9% {
+    transform: translateX(-1380px);
+  }
+  56.2% {
+    transform: translateX(-1380px);
+  }
+  57.2% {
+    transform: translateX(-1840px);
+  }
+  70.5% {
+    transform: translateX(-1840px);
+  }
+  71.5% {
+    transform: translateX(-2300px);
+  }
+  84.8% {
+    transform: translateX(-2300px);
+  }
+  85.8% {
+    transform: translateX(-2760px);
+  }
+  99% {
+    transform: translateX(-2760px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+.section_3 .under_bar {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  background-color: gainsboro;
+}
+
+.section_3 .move_bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  animation: move_bar 25s ease-in-out infinite;
+  transform-origin: left;
+}
+
+@keyframes move_bar {
+  0% {
+    transform: scaleX(14.3%);
+  }
+  13.3% {
+    transform: scaleX(14.3%);
+  }
+  14.3% {
+    transform: scaleX(28.6%);
+  }
+  27.6% {
+    transform: scaleX(28.6%);
+  }
+  28.6% {
+    transform: scaleX(42.9%);
+  }
+  41.9% {
+    transform: scaleX(42.9%);
+  }
+  42.9% {
+    transform: scaleX(57.2%);
+  }
+  56.2% {
+    transform: scaleX(57.2%);
+  }
+  57.2% {
+    transform: scaleX(71.5%);
+  }
+  70.5% {
+    transform: scaleX(71.5%);
+  }
+  71.5% {
+    transform: scaleX(85.8%);
+  }
+  84.8% {
+    transform: scaleX(85.8%);
+  }
+  85.8% {
+    transform: scaleX(100%);
+  }
+  99% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(14.3%);
+  }
+}
+
+.section_4 {
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_4 .title {
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.section_4 .text {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 800;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+}
+
+.section_4 .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.section_4 .btn a {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid black;
+  transition: 0.25s ease-in-out;
+}
+
+.section_4 .btn a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.section_5 {
+  width: 100%;
+  position: relative;
+}
+
+.section_5 .title {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: gray;
+}
+
+.section_5 .contents_wrap {
+  width: 100%;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_5 .contents {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_5 img {
+  transition: 0.25s ease-in-out;
+}
+
+.section_5 img:hover {
+  transform: translateY(-10px);
+}
+
+.section_5 .text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.section_6 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 100px 10px;
+}
+
+.section_6 .right_wrap {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.section_6 .left_wrap {
+  width: 50%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section_6 .top_text {
+  font-size: 18px;
+  color: gray;
+  padding: 10px 0;
+}
+
+.section_6 .middle_text {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.section_6 .bottom_text {
+  font-size: 18px;
+  color: gray;
+}
+
+.section_7 {
+  width: 100%;
+  position: relative;
+}
+
+.section_7 .title {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.section_7 .contents_wrap {
+  width: 100%;
+  position: relative;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_7 .contents {
+  width: 23%;
+  position: relative;
+}
+
+.section_7 .img_box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section_7 .main_img {
+  transition: 0.25s ease-in-out;
+  width: 100%;
+}
+
+.section_7 .main_img:hover {
+  transform: scale(1.1);
+}
+
+.section_7 .like {
+  position: absolute;
+  width: 25px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.section_7 .text_wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  padding-top: 15px;
+}
+
+.section_7 .main_text a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section_7 .sub_text {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.section_7 .delete_text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.section_7 .new_price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.section_7 .discount {
+  font-size:12px;
+  background-color: black;
+  color: rgb(255, 187, 0);
+  font-weight: bold;
+  padding: 0 3px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.section_7 .price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section_8 {
+  width: 100%;
+  position: relative;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_8 .right_wrap {
+  width: 49%;
+}
+
+.section_8 .left_wrap {
+  width: 49%;
+}
+
