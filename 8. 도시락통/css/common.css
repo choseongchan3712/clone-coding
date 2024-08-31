@@ -3,3 +3,14 @@
     max-width: 1400px;
     padding: 0 20px;
 }
+
+div, a, ul, li, p, span {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.style_font {
+    font-family: "Jua", sans-serif;
+    height: 100%;
+    position: relative;
+    top: 4px;
+}
