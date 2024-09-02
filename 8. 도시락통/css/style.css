@@ -349,6 +349,8 @@
     font-weight: 300;
     opacity: 0.8;
     padding-bottom: 20px;
+    word-spacing: -1px;
+    letter-spacing: -1px;
   }
   
   .section_2 .text_content .btn {
