@@ -177,7 +177,7 @@
   .section_2 .content_wrap a:hover::after {
     opacity: 0;
   }
-  
+
   .section_2 .content_wrap a:hover > img {
     transform: none;
   }
@@ -235,11 +235,11 @@
   .section_4 .blue:hover {
     background-color: #eee;
   }
-  
+
   .section_4 .red:hover {
     background-color: #eee;
   }
-  
+
   .section_4 .yellow:hover {
     background-color: #eee;
   }
