@@ -1,0 +1,118 @@
+@import url(./reset.css);
+@import url(./common.css);
+
+.wrap {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 990;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu_logo_wrap {
+  width: 250px;
+  position: relative;
+  z-index: 990;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 50px;
+  position: relative;
+  z-index: 991;
+  cursor: pointer;
+}
+
+.logo {
+  width: 150px;
+  position: relative;
+  z-index: 991;
+}
+
+.icons_wrap {
+  width: 190px;
+  position: relative;
+  z-index: 990;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons_wrap li {
+  width: 50px;
+  position: relative;
+  z-index: 991;
+}
+
+.body_wrap {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.section_1 {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.section_1 iframe {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101%;
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: 177.77vh;
+}
+
+.section_1 .common_box {
+  position: relative;
+  z-index: 1;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, .3);
+  color: white;
+  padding: 0 20px;
+  backdrop-filter: blur(5px);
+}
+
+.section_1 .text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section_1 .gost_box a {
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
