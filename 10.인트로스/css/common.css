@@ -1,0 +1,9 @@
+.inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section_2, .secition_3, .section_4, .section_5, .seciton_6 {
+  padding: 200px 0;
+}

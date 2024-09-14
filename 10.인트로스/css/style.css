@@ -1,0 +1,128 @@
+@import url(./reset.css);
+@import url(./common.css);
+
+.wrap {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  z-index: 990;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  position: relative;
+  z-index: 991;
+  width: 160px;
+}
+
+.logo_black {
+  position: absolute;
+  z-index: 991;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.menu_wrap {
+  position: absolute;
+  z-index: 991;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 80px;
+  display: flex;
+}
+
+.menu {
+  position: relative;
+  z-index: 991;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_text {
+  position: relative;
+  z-index: 992;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sub_menu {
+  position: absolute;
+  z-index: 992;
+  width: 100%;
+  height: 200px;
+  padding: 20px 0;
+  top: 80px;
+}
+
+.sub_menu a {
+  position: relative;
+  z-index: 992;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.white_box {
+  position: absolute;
+  z-index: 990;
+  width: 100%;
+  height: 280px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.black_line {
+  position: relative;
+  top: 80px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(90, 90, 90, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body_wrap {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
