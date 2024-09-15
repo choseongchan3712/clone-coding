@@ -19,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.25s ease-in-out;
 }
 
 .side_menu_click {
