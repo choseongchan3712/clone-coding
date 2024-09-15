@@ -14,7 +14,6 @@ const menuText = document.querySelectorAll(".menu_text");
 const subMenu = document.querySelectorAll(".sub_menu");
 const menu = document.querySelectorAll(".menu");
 
-
 window.addEventListener("wheel", (e) => {
   let upDown = e.wheelDeltaY;
   if (upDown < 0) {
@@ -61,8 +60,7 @@ window.addEventListener("scroll", () => {
         n.style.color = "white";
       });
     });
-
-  } else if (window.scrollY !==0) {
+  } else if (window.scrollY !== 0) {
     header.style.backgroundColor = "rgba(255, 255, 255, 1)";
     whiteLogo.style.opacity = "0";
     blackLogo.style.display = "block";
@@ -102,7 +100,6 @@ window.addEventListener("scroll", () => {
         n.style.color = "black";
       });
     });
-
   }
 });
 
@@ -170,15 +167,60 @@ sideMenu.addEventListener("click", () => {
   sideSlide.style.opacity = "1";
 });
 
-const language = document.querySelector('.language');
+const language = document.querySelector(".language");
 language.addEventListener("mouseover", () => {
   if (window.scrollY !== 0) {
     languageImg.style.filter = "invert(0)";
   }
-})
+});
 language.addEventListener("mouseleave", () => {
   if (window.scrollY !== 0) {
     languageImg.style.filter = "invert(100%)";
   }
-})
+});
+
+const section1MainImg = document.querySelector(".section_1 img");
+const section1MainText = document.querySelector(".section_1 .main_text");
+const section1SubText = document.querySelector(".section_1 .sub_text");
+
+document.addEventListener("DOMContentLoaded", () => {
+  section1MainImg.animate(
+    [{ transform: "scale(1)" }, { transform: "scale(1.1)" }],
+    {
+      duration: 3000, //!재생 시간
+      fill: "forwards", //! 끝나면 멈추는 점. forward는 끝나는 점
+      iterations: 1, //! 반복 횟수
+      easing: "ease-out",
+    }
+  );
+
+  section1MainText.animate (
+    [
+      {transform: "translateY(200px)", opacity: 0},
+      {transform: "translateY(0)", opacity: 1},
+    ],
+    {
+      duration: 1000,
+      fill: "forwards",
+      iterations: 1,
+      easing: "ease-in-out",
+    }
+  );
+  
+  section1SubText.animate (
+    [
+      {transform: "translateY(200px)", opacity: 0},
+      {transform: "translateY(0)", opacity: 1},
+    ],
+    {
+      duration: 1000,
+      fill: "forwards",
+      iterations: 1,
+      easing: "ease-in-out",
+      delay: 500,
+    }
+  );
+
+});
+
 
