@@ -224,3 +224,67 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+const section2TextContainer = document.querySelector(".section_2 .text_container");
+const section2LeftContents = document.querySelector(".section_2 .left_contents");
+const section2rightContents = document.querySelector(".section_2 .right_contents");
+
+
+
+
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY === 500) {
+    window.addEventListener("wheel", (e) => {
+      let upDown = e.deltaY;
+      if (upDown < 0) {
+        section2TextContainer.style.transform = "translateY(200px)";
+        section2TextContainer.style.opacity = 0;
+      } else if (upDown > 0) {
+        section2TextContainer.style.transform = "translateY(0)";
+        section2TextContainer.style.opacity = 1;
+      }
+    })
+  } else if (window .scrollY > 500) {
+    section2TextContainer.style.transform = "translateY(0)";
+    section2TextContainer.style.opacity = 1;
+  } else if (window .scrollY < 500) {
+    section2TextContainer.style.transform = "translateY(200px)";
+    section2TextContainer.style.opacity = 0;
+  }
+})
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY === 700) {
+    window.addEventListener("wheel", (e) => {
+      let upDown = e.deltaY;
+      if (upDown < 0) {
+        section2LeftContents.style.transform = "translateY(200px)";
+        section2LeftContents.style.opacity = 0;
+        section2rightContents.style.transform = "translateY(200px)";
+        section2rightContents.style.opacity = 0;
+        section2rightContents.style.transitionDelay = "0s";
+      } else if (upDown > 0) {
+        section2LeftContents.style.transform = "translateY(0)";
+        section2LeftContents.style.opacity = 1;
+        section2rightContents.style.transform = "translateY(0)";
+        section2rightContents.style.opacity = 1;
+        section2rightContents.style.transitionDelay = "0.5s";
+      }
+    })
+  } else if (window .scrollY > 700) {
+    section2LeftContents.style.transform = "translateY(0)";
+    section2LeftContents.style.opacity = 1;
+    section2rightContents.style.transform = "translateY(0)";
+    section2rightContents.style.opacity = 1;
+    section2rightContents.style.transitionDelay = "0.5s";
+  } else if (window .scrollY < 700) {
+    section2LeftContents.style.transform = "translateY(200px)";
+    section2LeftContents.style.opacity = 0;
+    section2rightContents.style.transform = "translateY(200px)";
+    section2rightContents.style.opacity = 0;
+    section2rightContents.style.transitionDelay = "0s";
+  }
+})
+
+
+
