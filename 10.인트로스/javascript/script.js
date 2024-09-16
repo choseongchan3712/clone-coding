@@ -286,5 +286,111 @@ window.addEventListener("scroll", () => {
   }
 })
 
+const contents1 = document.querySelector(".section_3 .contents_1");
+const contents2 = document.querySelector(".section_3 .contents_2");
+const contents3 = document.querySelector(".section_3 .contents_3");
+const contents4 = document.querySelector(".section_3 .contents_4");
+const contents5 = document.querySelector(".section_3 .contents_5");
 
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY < 2000) {
+    contents1.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents2.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents3.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents4.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents5.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  } else if (window.scrollY > 2000 && window.scrollY < 2200) {
+    contents1.style.backgroundColor = "#6400FF";
+    contents2.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents3.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents4.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents5.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  } else if (window.scrollY > 2200 && window.scrollY < 2600) {
+    contents1.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents2.style.backgroundColor = "#6400FF";
+    contents3.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents4.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents5.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  } else if (window.scrollY > 2600 && window.scrollY < 2800) {
+    contents1.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents2.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents3.style.backgroundColor = "#6400FF";
+    contents4.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents5.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  } else if (window.scrollY > 2800 && window.scrollY < 3200) {
+    contents1.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents2.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents3.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents4.style.backgroundColor = "#6400FF";
+    contents5.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  } else if (window.scrollY > 3200 && window.scrollY < 3400) {
+    contents1.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents2.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents3.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents4.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents5.style.backgroundColor = "#6400FF";
+  } else if (window.scrollY > 3400) {
+    contents1.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents2.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents3.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents4.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    contents5.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  }
+})
+
+const bg1 = document.querySelector(".section_3 .bg_1");
+const bg2 = document.querySelector(".section_3 .bg_2");
+const bg3 = document.querySelector(".section_3 .bg_3");
+const bg4 = document.querySelector(".section_3 .bg_4");
+const bg5 = document.querySelector(".section_3 .bg_5");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY < 2000) {
+    bg1.style.opacity = 1;
+    bg2.style.opacity = 0;
+    bg3.style.opacity = 0;
+    bg4.style.opacity = 0;
+    bg5.style.opacity = 0;
+  } else if (window.scrollY > 2000 && window.scrollY < 2200) {
+    let per = (2200 - window.scrollY) / 200;
+    bg1.style.opacity = per;
+    bg2.style.opacity = 1 - per;
+    bg3.style.opacity = 0;
+    bg4.style.opacity = 0;
+    bg5.style.opacity = 0;
+  } else if (window.scrollY > 2200 && window.scrollY < 2600) {
+    let per = (2600 - window.scrollY) / 400;
+    bg1.style.opacity = 0;
+    bg2.style.opacity = per;
+    bg3.style.opacity = 1 - per;
+    bg4.style.opacity = 0;
+    bg5.style.opacity = 0;
+  } else if (window.scrollY > 2600 && window.scrollY < 2800) {
+    let per = (2800 - window.scrollY) / 200;
+    bg1.style.opacity = 0;
+    bg2.style.opacity = 0;
+    bg3.style.opacity = per;
+    bg4.style.opacity = 1 - per;
+    bg5.style.opacity = 0;
+  } else if (window.scrollY > 2800 && window.scrollY < 3200) {
+    let per = (3200 - window.scrollY) / 400;
+    bg1.style.opacity = 0;
+    bg2.style.opacity = 0;
+    bg3.style.opacity = 0;
+    bg4.style.opacity = per;
+    bg5.style.opacity = 1 - per;
+  } else if (window.scrollY > 3200 && window.scrollY < 3400) {
+    bg1.style.opacity = 0;
+    bg2.style.opacity = 0;
+    bg3.style.opacity = 0;
+    bg4.style.opacity = 0;
+    bg5.style.opacity = 1;
+  } else if (window.scrollY > 3400) {
+    bg1.style.opacity = 0;
+    bg2.style.opacity = 0;
+    bg3.style.opacity = 0;
+    bg4.style.opacity = 0;
+    bg5.style.opacity = 1;
+  }
+})
