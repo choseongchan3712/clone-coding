@@ -394,3 +394,95 @@ window.addEventListener("scroll", () => {
     bg5.style.opacity = 1;
   }
 })
+
+const section4TextContainer = document.querySelector(".section_4 .inner .text_container")
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY === 4475) {
+    window.addEventListener("wheel", (e) => {
+      let upDown = e.deltaY;
+      if (upDown < 0) {
+        section4TextContainer.style.transform = "translateY(200px)";
+        section4TextContainer.style.opacity = 0;
+      } else if (upDown > 0) {
+        section4TextContainer.style.transform = "translateY(0)";
+        section4TextContainer.style.opacity = 1;
+      }
+    })
+  } else if (window .scrollY > 4475) {
+    section4TextContainer.style.transform = "translateY(0)";
+    section4TextContainer.style.opacity = 1;
+  } else if (window .scrollY < 4475) {
+    section4TextContainer.style.transform = "translateY(200px)";
+    section4TextContainer.style.opacity = 0;
+  }
+})
+
+const section4Contents = document.querySelector('.section_4 .contents_wrap');
+const section4Bg1 = document.querySelector('.section_4 .contents_wrap .img_wrap .section_4_bg_1');
+const section4Bg2 = document.querySelector('.section_4 .contents_wrap .img_wrap .section_4_bg_2');
+const section4Bg3 = document.querySelector('.section_4 .contents_wrap .img_wrap .section_4_bg_3');
+const section4Contents1 = document.querySelector('.section_4 .contents_wrap .left');
+const section4Contents2 = document.querySelector('.section_4 .contents_wrap .center');
+const section4Contents3 = document.querySelector('.section_4 .contents_wrap .right');
+const section4ColorBox = document.querySelector('.section_4 .contents_wrap .color_box');
+
+section4Contents1.addEventListener("mouseover", () => {
+  section4Bg1.style.opacity = 1;
+  section4Bg2.style.opacity = 0;
+  section4Bg3.style.opacity = 0;
+  section4ColorBox.style.opacity = 1;
+  section4ColorBox.style.transform = "translateX(0)";
+})
+
+section4Contents1.addEventListener("mouseleave", () => {
+  section4ColorBox.style.opacity = 0;
+  section4ColorBox.style.transform = "translateX(0)";
+})
+
+section4Contents2.addEventListener("mouseover", () => {
+  section4Bg1.style.opacity = 0;
+  section4Bg2.style.opacity = 1;
+  section4Bg3.style.opacity = 0;
+  section4ColorBox.style.opacity = 1;
+  section4ColorBox.style.transform = "translateX(100%)";
+})
+
+section4Contents2.addEventListener("mouseleave", () => {
+  section4ColorBox.style.opacity = 0;
+  section4ColorBox.style.transform = "translateX(0)";
+})
+
+section4Contents3.addEventListener("mouseover", () => {
+  section4Bg1.style.opacity = 0;
+  section4Bg2.style.opacity = 0;
+  section4Bg3.style.opacity = 1;
+  section4ColorBox.style.opacity = 1;
+  section4ColorBox.style.transform = "translateX(200%)";
+})
+
+section4Contents3.addEventListener("mouseleave", () => {
+  section4ColorBox.style.opacity = 0;
+  section4ColorBox.style.transform = "translateX(0)";
+})
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY === 4700) {
+    window.addEventListener("wheel", (e) => {
+      let upDown = e.deltaY;
+      if (upDown < 0) {
+        section4Contents.style.transform = "translateY(200px)";
+        section4Contents.style.opacity = 0;
+      } else if (upDown > 0) {
+        section4Contents.style.transform = "translateY(0)";
+        section4Contents.style.opacity = 1;
+      }
+    })
+  } else if (window .scrollY > 4700) {
+    section4Contents.style.transform = "translateY(0)";
+    section4Contents.style.opacity = 1;
+  } else if (window .scrollY < 4700) {
+    section4Contents.style.transform = "translateY(200px)";
+    section4Contents.style.opacity = 0;
+  }
+})
